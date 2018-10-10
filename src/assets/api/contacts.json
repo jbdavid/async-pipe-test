@@ -1,0 +1,7 @@
+{
+  "contacts": [
+    {"name": "name1", "image": "image1"},
+    {"name": "name2", "image": "image2"},
+    {"name": "name3", "image": "image3"}
+  ]
+}

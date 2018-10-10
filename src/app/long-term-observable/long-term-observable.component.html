@@ -1,0 +1,17 @@
+<mat-list>
+  <mat-list-item *ngFor="let contact of contacts$ | async">
+    <h3 matLine> {{contact.name}} </h3>
+  </mat-list-item>
+</mat-list>
+
+
+<button (click)="newSeq()">New random sequence</button>
+<ul>
+  <li [style.background-color]="item.color"
+      *ngFor="let item of items$ | async">{{item.num}}</li>
+</ul>
+
+<button (click)="newSeq2()">New random sequence</button>
+<ul>
+  <my-seq *ngFor="let seq of seqs" [items$]="seq"></my-seq>
+</ul>

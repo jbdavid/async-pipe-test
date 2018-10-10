@@ -1,0 +1,4 @@
+<ul>
+  <li [style.background-color]="item.color"
+      *ngFor="let item of items$ | async">{{item.num}}</li>
+</ul>
